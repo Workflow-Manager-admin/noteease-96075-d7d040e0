@@ -27,10 +27,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Ensure models are imported so Alembic and SQLAlchemy are aware of them
 # In deployment, consider running migrations via Alembic tool
-
 
 
 @app.on_event("startup")
